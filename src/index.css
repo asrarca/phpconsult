@@ -1,0 +1,81 @@
+@import "tailwindcss";
+
+@theme {
+  --color-bg:       #F4F0E8;
+  --color-bg-soft:  #EDE7DA;
+  --color-ink:      #1A1815;
+  --color-ink-soft: #3C3631;
+  --color-muted:    #8A8175;
+  --color-rule:     rgba(26, 24, 21, 0.14);
+
+  --font-serif: "Instrument Serif", serif;
+  --font-mono:  "JetBrains Mono", ui-monospace, monospace;
+  --font-sans:  "Inter", -apple-system, system-ui, sans-serif;
+}
+
+@layer base {
+  *, *::before, *::after { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  html, body { margin: 0; padding: 0; background-color: var(--color-bg); color: var(--color-ink); }
+  body { font-family: var(--font-sans); font-size: 15px; line-height: 1.5; -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility; }
+  a { color: inherit; }
+  ::selection { background: var(--accent, #B8492A); color: var(--color-bg); }
+}
+
+@layer components {
+  .container {
+    max-width: 1280px;
+    margin-inline: auto;
+    padding-inline: 40px;
+  }
+
+  @media (max-width: 639px) {
+    .container { padding-inline: 20px; }
+  }
+
+  .navlink {
+    text-decoration: none;
+    font-family: var(--font-mono);
+    font-size: 11px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--color-ink-soft);
+    transition: color 0.15s;
+  }
+  .navlink:hover { color: var(--accent, #B8492A); }
+
+  .cta-pill {
+    text-decoration: none;
+    color: var(--color-bg);
+    font-family: var(--font-mono);
+    font-size: 11px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    padding: 10px 16px;
+    border-radius: 999px;
+    display: inline-block;
+    transition: transform 0.15s ease, filter 0.15s ease;
+  }
+  .cta-pill:hover { transform: translateY(-1px); filter: brightness(1.05); }
+
+  .footlink {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.5);
+    transition: color 0.15s;
+  }
+  .footlink:hover { color: var(--accent, #B8492A); }
+
+  .contact-card {
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 28px;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    background: rgba(255, 255, 255, 0.02);
+    transition: border-color 0.2s, background 0.2s;
+  }
+  .contact-card:hover {
+    border-color: var(--accent, #B8492A);
+    background: rgba(255, 255, 255, 0.04);
+  }
+}
