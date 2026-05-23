@@ -2,7 +2,7 @@ import MonoLabel from './MonoLabel.jsx';
 
 const GROUPS = [
   { label: "Languages",       items: ["PHP 8.x", "Node.js", "React", "JavaScript"] },
-  { label: "CMS / Framework", items: ["Drupal 10", "Symfony", "Laravel", "CodeIgniter"] },
+  { label: "CMS / Framework", items: ["Drupal 10+", "Symfony", "Laravel", "CodeIgniter"] },
   { label: "Databases",       items: ["MySQL", "SQL Server", "MariaDB", "MongoDB"] },
   { label: "Cloud",           items: ["AWS", "Acquia", "Azure", "DigitalOcean"] },
   { label: "Integrations",    items: ["Salesforce", "Auth0", "Stripe", "SAP"] },
@@ -15,7 +15,7 @@ export default function StackRow() {
         {GROUPS.map((g) => (
           <div key={g.label}>
             <MonoLabel className="text-muted">{g.label}</MonoLabel>
-            <ul className="list-none p-0 m-0 mt-[10px] text-[13px] leading-[1.8] text-ink-soft">
+            <ul className="list-none p-0 m-0 mt-2.5 text-[13px] leading-[1.8] text-ink-soft">
               {g.items.map((item) => <li key={item}>{item}</li>)}
             </ul>
           </div>

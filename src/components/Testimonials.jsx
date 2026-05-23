@@ -10,7 +10,7 @@ export default function Testimonials({ accent }) {
           <div>
             <MonoLabel className="text-muted">Testimonials</MonoLabel>
             <h2 className="font-serif font-normal text-[clamp(32px,4.5vw,56px)] leading-[1.02] tracking-[-0.01em] mt-4 mb-0 max-w-[820px]">
-              What the people who worked with me say.
+              People who worked with me say this:
             </h2>
           </div>
           <MonoLabel className="text-muted hidden sm:block">From LinkedIn</MonoLabel>
