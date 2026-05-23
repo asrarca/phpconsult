@@ -5,7 +5,7 @@ import { FAQS } from '../data/index.js';
 export default function FAQ() {
   const [open, setOpen] = useState(0);
   return (
-    <section className="py-16 lg:py-24 border-b border-rule">
+    <section id="faq" className="py-16 lg:py-24 border-b border-rule">
       <div className="container grid grid-cols-1 lg:grid-cols-[1fr_1.6fr] gap-12 lg:gap-20">
 
         <div>

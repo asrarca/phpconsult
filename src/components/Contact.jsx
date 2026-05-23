@@ -4,7 +4,7 @@ import { CONTACT_QUOTE } from '../data/index.js';
 
 export default function Contact({ accent }) {
   const [copied, setCopied] = useState(false);
-  const email = "hello@example.dev";
+  const email = "asrar.ca@gmail.com";
   const copy = () => {
     navigator.clipboard?.writeText(email);
     setCopied(true);

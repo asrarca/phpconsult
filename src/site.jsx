@@ -55,7 +55,7 @@ export default function App() {
       <Contact accent={accent} />
       <Footer accent={accent} />
 
-      <TweaksPanel title="Tweaks">
+      <TweaksPanel title="Tweaks" className="hidden">
         <TweakSection label="Visual">
           <TweakColor
             label="Accent"

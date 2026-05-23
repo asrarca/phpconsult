@@ -44,15 +44,15 @@ export default function Proof({ accent }) {
           <p className="m-0">
             I started writing PHP in 2005, before Composer, before namespaces, before most of the people in the industry now. I've shipped Drupal 7, 8, 9, and 10 at enterprise scale — most recently architecting a global site for an aerospace manufacturer with Salesforce and Auth0 integration.
           </p>
-          <p className="mt-[18px]">
+          <p className="mt-4.5">
             Earlier work includes database migration projects at a financial research firm, custom data modeling for the most complex wheel-fitment dataset in North America, and a performance optimization engagement that pulled a publisher's page speed up roughly tenfold.
           </p>
-          <p className="mt-[18px]">
+          <p className="mt-4.5">
             I'm not the cheapest. I'm the person you call when the cheap one didn't work out.
           </p>
           <div className="mt-9 grid grid-cols-3 gap-6 lg:gap-8">
-            <Stat n="1000%" l="Page-speed lift, last audit" accent={accent} />
-            <Stat n="20+"   l="Years writing PHP"           accent={accent} />
+            <Stat n="1000%" l="Performance improvement potential"   accent={accent} />
+            <Stat n="20+"   l="Years architecting PHP"           accent={accent} />
             <Stat n="∞"     l="Drupal hooks debugged"       accent={accent} />
           </div>
         </div>

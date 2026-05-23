@@ -1,11 +1,11 @@
 import MonoLabel from './MonoLabel.jsx';
 
 const GROUPS = [
-  { label: "Languages",       items: ["PHP 8.x", "SQL", "JavaScript", "Bash"] },
-  { label: "CMS / Framework", items: ["Drupal 10", "Symfony", "Laravel", "Legacy custom"] },
-  { label: "Databases",       items: ["MySQL", "MariaDB", "SQL Server", "PostgreSQL"] },
-  { label: "Cloud",           items: ["AWS", "Acquia", "RDS", "ECS / EC2"] },
-  { label: "Integrations",    items: ["Salesforce", "Auth0", "Stripe", "Algolia"] },
+  { label: "Languages",       items: ["PHP 8.x", "Node.js", "React", "JavaScript"] },
+  { label: "CMS / Framework", items: ["Drupal 10", "Symfony", "Laravel", "CodeIgniter"] },
+  { label: "Databases",       items: ["MySQL", "SQL Server", "MariaDB", "MongoDB"] },
+  { label: "Cloud",           items: ["AWS", "Acquia", "Azure", "DigitalOcean"] },
+  { label: "Integrations",    items: ["Salesforce", "Auth0", "Stripe", "SAP"] },
 ];
 
 export default function StackRow() {

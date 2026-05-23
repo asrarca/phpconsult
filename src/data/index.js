@@ -30,7 +30,7 @@ export const SERVICES = [
     n: "01",
     tag: "Audit",
     name: "The Performance Audit",
-    lede: "I'll find the performance leaks in your PHP application. Guaranteed.",
+    lede: "I'll find the performance leaks and architectural flaws in your PHP application. Guaranteed.",
     body: "A focused read of your codebase, database queries, caching strategy, and infrastructure. You get a written report that names bottlenecks, ranks them by impact, and tells you what to fix first. No abstract recommendations — every finding is tied to a file, a query, or a config line.",
     priceLabel: "Fixed price",
     price: "$1,500 – $2,500",
@@ -42,26 +42,26 @@ export const SERVICES = [
       "30-minute walkthrough call",
       "Optional: implementation retainer at $150/hr",
     ],
-    fitFor: "Teams whose app feels slow and don't know where to start.",
+    fitFor: "Teams whose app feels slow and don't know where to start, or teams whose vibe coding has gotten out of hand.",
   },
   {
     n: "02",
     tag: "Architecture",
     name: "Drupal 10 Enterprise",
     lede: "Drupal at scale, with the integrations real businesses actually need.",
-    body: "Drupal 10 architecture for organizations that have outgrown WordPress and need a CMS that survives audits. Acquia Cloud, Salesforce, Auth0, multi-site, content syndication, custom modules. I've done this at the Bombardier scale of complexity — your project is probably simpler than that.",
+    body: "Drupal 10 architecture for organizations that have outgrown WordPress and need a CMS that survives audits. Acquia Cloud, Salesforce or SAP integrations, multi-site, migration scripts, custom modules. I've done this at the enterprise scale of complexity — your project is probably simpler than that.",
     priceLabel: "Hourly",
-    price: "$175 – $200/hr",
+    price: "$150 – $200/hr",
     timeLabel: "Engagement",
     time: "Retainer or project-based",
     deliverables: [
       "Architecture diagrams + ADRs",
       "Module + config strategy",
       "Acquia / hosting setup",
-      "Third-party integrations (SF, Auth0, etc.)",
+      "Third-party integrations (SF, SAP, Auth0, etc.)",
       "Hand-off documentation your team can actually use",
     ],
-    fitFor: "Nonprofits, government, universities, media companies, and anyone else stuck on Drupal 7/8.",
+    fitFor: "SMEs, government, universities, media companies, and anyone else stuck on Drupal 7/8.",
   },
   {
     n: "03",
@@ -101,46 +101,60 @@ export const FAQS = [
 
 export const TESTIMONIALS = [
   {
-    quote: "His code is efficient, clean, modular, comprehensive and speaks for itself. He pays attention to details whether working on the front end or back end.",
-    name: "Musab Mirza",
-    role: "Software Engineer",
-    rel: "Worked together at Fastco",
-    year: "2014",
-  },
-  {
     quote: "The dream developer. Every day, he made my job easier by delivering standards-compliant, elegant code and solutions within scope, on time and within budget — all at uncompromising levels of quality — all the time.",
     name: "Pat Yoshida, PMP",
     role: "Principal PMO Consultant, Fastco Canada",
-    rel: "Managed Asrar directly for 7 years",
+    rel: "Manager (7 years)",
     year: "2018",
+  },
+  {
+    quote: "Asrar's guidance was instrumental in shaping my ability to build scalable, maintainable solutions. His emphasis on clean code has left a lasting impact on my development approach.",
+    name: "Maria Parra-Pino",
+    role: "Senior Software Engineer",
+    rel: "Colleague (5 years)",
+    year: "2025",
   },
   {
     quote: "He architected and developed a complex publishing site using Drupal 10 on Acquia Cloud — data migration from legacy platforms, custom modules, services, APIs — all with clean, scalable code.",
     name: "Badi Haddadin",
     role: "Senior System Administrator, BCA Research",
-    rel: "Worked together 5+ years",
+    rel: "Colleague (5 years)",
     year: "2025",
   },
   {
     quote: "Sharp analytical thinking with a meticulous, forward-looking approach to programming. His ability to see the bigger picture ensures not only that current requirements are fulfilled but that future use cases are anticipated and addressed.",
     name: "Paul Chow",
     role: "Technology & Cybersecurity Leader (CISSP)",
-    rel: "Managed Asrar directly",
+    rel: "Manager (2 years)",
     year: "2025",
   },
   {
-    quote: "His deep grasp of PHP, object-oriented design and architectural principles is something I've always admired. His brutally honest (and surgically precise) PR feedback played a huge role in shaping me into the developer I am today.",
+    quote: "His deep grasp of PHP, object-oriented design and architectural principles is something I've always admired. I honestly believe he's destined for a code architect role.",
     name: "Arshdeep Singh",
     role: "Tech Lead, Full-Stack Engineering",
-    rel: "Worked together at BCA",
+    rel: "Colleague (5 years)",
     year: "2025",
   },
   {
     quote: "A strong point of view to the technical challenges and isn't afraid to speak up when he sees room for improvement. His ability to think critically and challenge assumptions is a valuable asset in fast-moving environments.",
     name: "Carlos Eduardo Souza Lopes",
     role: "CTO, NDR",
-    rel: "Managed Asrar directly",
+    rel: "Manager (3 years)",
     year: "2025",
+  },
+  {
+    quote: "Asrar is a guru, an excellent mentor and a well thought programmer. He is at his best when working under pressure. No matter how urgent and complex a situation gets, you can trust him to sort things out quickly.",
+    name: "Musab Mirza",
+    role: "Software Engineer",
+    rel: "Colleague (3 years)",
+    year: "2014",
+  },
+  {
+    quote: "His code is efficient, clean, modular, comprehensive and speaks for itself. He pays attention to details whether working on the front end or back end.",
+    name: "Musab Mirza",
+    role: "Software Engineer",
+    rel: "Colleague (3 years)",
+    year: "2014",
   },
 ];
 
@@ -151,16 +165,18 @@ export const TESTIMONIAL_LAYOUT = [
   { idx: 3, span: 7, size: "lg" },
   { idx: 4, span: 6, size: "md" },
   { idx: 5, span: 6, size: "md" },
+  { idx: 6, span: 7, size: "lg" },
+  { idx: 7, span: 5, size: "md" },
 ];
 
 export const COL_SPAN = { 5: 'lg:col-span-5', 6: 'lg:col-span-6', 7: 'lg:col-span-7' };
 
 export const PULL_QUOTE = {
-  text: "Asrar is a guru.",
-  attribution: "Musab Mirza, Software Engineer",
+  text: "Whoever knows Asrar is winning.",
+  attribution: "Francis Lacerte, Senior Software Engineer",
 };
 
 export const CONTACT_QUOTE = {
-  text: "He could always see the forest for the trees.",
+  text: "He could always see the forest for the trees which made him so valuable.",
   attribution: "Pat Yoshida, Principal PMO Consultant",
 };
