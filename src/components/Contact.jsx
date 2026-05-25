@@ -56,7 +56,7 @@ export default function Contact({ accent }) {
             </div>
           </a>
 
-          <a href="#" className="contact-card">
+          <a href="https://calendly.com/asrar-ca/30min" target="_blank" rel="noopener noreferrer" className="contact-card">
             <MonoLabel className="text-white/50">Book a call</MonoLabel>
             <div className="font-serif text-[24px] md:text-[30px] mt-2">30-min intro</div>
             <div className="mt-[18px] flex justify-between items-center">
