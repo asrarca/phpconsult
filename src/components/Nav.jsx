@@ -15,9 +15,9 @@ export default function Nav({ accent }) {
     >
       <div className="container flex items-center justify-between py-4.5">
         <div className="flex items-baseline gap-3.5 min-w-0">
-          <span className="font-serif text-[18px] sm:text-[22px] leading-none whitespace-nowrap">
+          <a href="#" className="font-serif text-[18px] sm:text-[22px] leading-none whitespace-nowrap hover:opacity-80 transition-opacity">
             Senior PHP Consulting
-          </span>
+          </a>
           <MonoLabel className="text-muted ml-1.5 hidden sm:inline shrink-0">est. 2026</MonoLabel>
         </div>
 
