@@ -11,7 +11,7 @@ export const HERO_VARIANTS = {
   guarantee: {
     eyebrow: "Consulting · Remote · Booking Q3 2026",
     h1: ["I find the things your", "PHP app does wrong.", "Then I fix them."],
-    sub: "Twenty years inside PHP, including enterprise level Drupal 10+, Laravel, CodeIgniter, CakePHP, custom frameworks, legacy code, and the database layer underneath. I sell three things: a performance audit you can read in an afternoon, enterprise level architecture, and database migrations that don't take the site down.",
+    sub: "Twenty years inside PHP, including enterprise level Drupal 10+, Laravel, CodeIgniter, custom frameworks, legacy code, and the database layer underneath. I sell three things: a performance audit you can read in an afternoon, enterprise level architecture, and database migrations that don't take the site down.",
   },
   resume: {
     eyebrow: "Consulting · Remote · Booking Q3 2026",

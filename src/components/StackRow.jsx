@@ -2,7 +2,7 @@ import MonoLabel from './MonoLabel.jsx';
 
 const GROUPS = [
   { label: "Languages",       items: ["PHP 8.x", "Node.js", "React", "JavaScript"] },
-  { label: "CMS / Framework", items: ["Drupal 10+", "Symfony", "Laravel", "CodeIgniter"] },
+  { label: "PHP Frameworks",  items: ["Drupal 10+", "Symfony", "Laravel", "CodeIgniter"] },
   { label: "Databases",       items: ["MySQL", "SQL Server", "MariaDB", "MongoDB"] },
   { label: "Cloud",           items: ["AWS", "Acquia", "Azure", "DigitalOcean"] },
   { label: "Integrations",    items: ["Salesforce", "Auth0", "Stripe", "SAP"] },

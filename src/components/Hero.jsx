@@ -6,10 +6,10 @@ import { HERO_VARIANTS } from '../data/index.js';
 export default function Hero({ variant, accent }) {
   const v = HERO_VARIANTS[variant] || HERO_VARIANTS.guarantee;
   const statsRows = [
+    { label: "Experience",   value: "20+ years" },
     { label: "Hourly",       value: "$150" },
     { label: "Availability", value: "~20 hrs / week" },
-    { label: "Location",     value: "Remote · ET" },
-    { label: "Experience",   value: "20+ years" },
+    { label: "Location",     value: "Remote (EST)" },
   ];
 
   return (
